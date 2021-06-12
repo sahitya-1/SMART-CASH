@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Home Loan | SMART CASH</title>
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.png' />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body class="form-body">
+    <div id="container">
+        <div id="header">
+            <header class="main-header">
+                <div class="nav">
+                    <input type="checkbox" id="nav-check">
+                    <div class="nav-header">
+                        <a href="index.html"><img src="smart_cashlogo.png" /></a>
+                    </div>
+                    <div class="nav-btn">
+                        <label for="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+                    </div>
+
+                    <div class="nav-links">
+                        <a href="index.html">HOME</a>
+                        <a href="signin.html">SIGN IN</a>
+                        <a class="active" href="signup.html">SIGN UP</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="content-wrap">
+            <section>
+                <div class="content-div">
+                    <div class="centered">
+                        <form action="#">
+                            <div class="signup-content signup-width">
+                                <h1 class="margin-left">HOME LOAN</h1>
+                                <h2>CUSTOMER INFORMATION.</h2>
+                                <hr>
+                                <div class="left-div left-text">
+                                     <div class="">
+              <span class="required"><strong>Type of Occupation</strong>*</span><br><br>
+              <div class="filter blue semi-square">
+                <select name="filter-details" onchange="filterLoan(this)">
+                     <option value="pending" selected >Select</option>
+
+                        <option value="government">Self Employed</option>
+                        <option value="Private">Salaried</option>
+                        
+                    </select>
+              </div>
+            </div>
+                                       <div class="">
+              <span class="required"><strong>Do you own or rent your home?</strong>*</span><br><br>
+              <div class="filter blue semi-square">
+                <select name="filter-details" onchange="filterLoan(this)">
+                     <option value="pending" selected >Select</option>
+
+                        <option value="own">Own</option>
+                        <option value="rent">Rent</option>
+                        
+                    </select>
+              </div>
+            </div>
+                                        <div class="">
+              <span class="required"><strong>Do you need to sell your home before buying a new one?</strong>*</span><br><br>
+              <div class="filter blue semi-square">
+                <select name="filter-details" onchange="filterLoan(this)">
+                     <option value="pending" selected >Select</option>
+
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        
+                    </select>
+              </div>
+            </div>
+                                    <div class="">
+              <span class="required"><strong>Type of purchase</strong>*</span><br><br>
+              <div class="filter blue semi-square">
+                <select name="filter-details" onchange="filterLoan(this)">
+                     <option value="pending" selected >Select</option>
+
+                        <option value="Primary">Primary Residency</option>
+                        <option value="Secondary">Secondary Residency</option>
+                        <option value="Investments">Investments</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+              </div>
+            </div>
+              <span class="required"><strong>Annual Income</strong>*</span><br><br>
+                                    <input type="text" placeholder="Enter Income" name="income" required>
+
+ <div class="signup-footer">
+                                    <a href="HomeLoan_cont2.html" class="btn-primary btn-primary-big">Next</a>
+                                   
+                                </div>
+                                
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+    <footer id="footer" class="text-white">
+        <p>Developed by SMART CASH-TEAM</p>
+            <p>Copyright © 2021</p>
+    </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
